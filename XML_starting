@@ -1,0 +1,30 @@
+Normal Textview
+<TextView
+    android:text="Happy Birthday!"
+    android:background="@android:color/darker_gray"
+    android:layout_width="150dp"
+    android:layout_height="150dp" />
+
+This is for scale independent pixel and text appearance
+<TextView
+    android:text="Excited for the gift you'll surprise me with."
+    android:background="@android:color/darker_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:textAppearanceLarge"
+    />
+This one is for text colour
+<TextView
+    android:text="I got you a free hug. Surprise!"
+    android:background="#00fa9a"
+    android:textColor="#9acd32"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="45sp" />
+    
+This one is for image view
+    <ImageView
+    android:src="@drawable/cake"
+    android:layout_width="900dp"
+    android:layout_height="900dp"
+    android:scaleType="centerCrop"/>
