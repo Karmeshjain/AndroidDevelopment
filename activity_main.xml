@@ -1,96 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <GridLayout
-        android:id="@+id/GridLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="2"
-        android:orientation="horizontal"
-        android:rowCount="3"
-        tools:context=".GridXMLActivity"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="0dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="First Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
 
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="160dp"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="392dp"
+        android:onClick="callSecondActivity"
+        android:text="Call second activity(Karmesh)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            android:layout_height="90dp"
-            android:layout_gravity="left|top"
-            android:layout_margin="32dp"
-            android:src="@drawable/ui1" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="160dp"
-            android:layout_height="90dp"
-            android:layout_margin="32dp"
-            android:layout_gravity="left|top"
-            android:src="@drawable/ui2" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="160dp"
-            android:layout_height="90dp"
-            android:layout_margin="32dp"
-            android:src="@drawable/ui3" />
-
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="160dp"
-            android:layout_height="90dp"
-            android:layout_margin="32dp"
-            android:layout_gravity="left|top"
-            android:src="@drawable/ui4" />
-
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="160dp"
-            android:layout_height="90dp"
-            android:layout_margin="32dp"
-            android:layout_gravity="left|top"
-            android:src="@drawable/ui5" />
-
-        <ImageButton
-            android:id="@+id/imageButton6"
-            android:layout_width="160dp"
-            android:layout_margin="32dp"
-            android:layout_height="90dp"
-            android:layout_gravity="left|top"
-            android:src="@drawable/uid1" />
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="160dp"
-            android:layout_margin="32dp"
-            android:layout_height="90dp"
-            android:layout_gravity="left|top"
-            android:src="@drawable/uid1" />
-        <ImageButton
-            android:id="@+id/imageButton8"
-            android:layout_width="160dp"
-            android:layout_margin="32dp"
-            android:layout_height="90dp"
-            android:layout_gravity="left|top"
-            android:src="@drawable/uid1" />
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="160dp"
-            android:layout_margin="32dp"
-            android:layout_height="90dp"
-            android:layout_gravity="left|top"
-            android:src="@drawable/uid1" />
-        <ImageButton
-            android:id="@+id/imageButton10"
-            android:layout_width="160dp"
-            android:layout_margin="32dp"
-            android:layout_height="90dp"
-            android:layout_gravity="left|top"
-            android:src="@drawable/uid1" />
-
-    </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
