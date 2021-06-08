@@ -1,10 +1,13 @@
-package com.example.explicitintent;
+package com.example.intent_karmesh;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+
+import java.net.URI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,12 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void callSecondActivity(View view){
-        Intent i = new Intent(getApplicationContext(), SecondactivityKarmesh.class);
-        i.putExtra("Value1", "Karmesh(500075888)");
-        i.putExtra("Value2", "R142219014");
-        // Set the request code to any code you like, you can identify the
-        // callback via this code
-        startActivity(i);
+    public void next(View v)
+    {
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.google.com/"));
+        startActivity(intent);
     }
 }
